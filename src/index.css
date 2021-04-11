@@ -158,6 +158,24 @@ main {
 }
 .loading {
   text-align: center;
+  width: 200px;
+  height: 200px;
+  border-right: 5px solid blue;
+  border-radius: 50%;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-40%,-40%);
+  animation: rot .8s linear infinite;
+
+}
+@keyframes rot {
+    0%{
+      transform: rotate(0deg);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
 }
 .title {
   text-align: center;
